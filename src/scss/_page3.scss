@@ -4,6 +4,7 @@
   height: 85vh;
   background-color: color(main-color);
   font-family: 'Raleway', sans-serif;
+  text-align: center;
   @include tablet {
     height: 100vh;
   }
@@ -11,7 +12,7 @@
     height: 100vh;
   }
   @include desktop {
-    margin-top: 50rem;
+    margin-top: 60rem;
     height: 100vh;
   }
 }
