@@ -1,0 +1,177 @@
+@import "_variables.scss";
+
+.pageTwo{
+  z-index: -1;
+  @include desktop{
+    height: 60vh;
+  }
+}
+.pageTwoTitle {
+  color: color(dark-main-color);
+  top: 4rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  position: absolute;
+  text-align: end;
+  width: 100%;
+  margin-left: -1.2rem;
+  @include tablet {
+    margin-left: -2.5rem;
+    top: 2.5rem;
+    font-size: 3rem;
+  }
+  @include laptop {
+    text-align: end;
+    margin-left: -11rem;
+    top: 6rem;
+    font-size: 2.5rem;
+  }
+  @include desktop {
+    text-align: end;
+    margin-left: -24.5rem;
+    top: 2.5rem;
+    font-size: 4rem;
+  }
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 220vh;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 45vh;
+    justify-content: space-evenly;
+  }
+  @include laptop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85vh;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 120rem;
+  }
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85vh;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 10rem;
+    width: 168rem;
+  }
+}
+
+.individual-news-image {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 25rem;
+  height: 25rem;
+  border: .7rem solid black;
+  @include tablet {
+    width: 15rem;
+    height: 15rem;
+  }
+  @include laptop {
+    width: 35rem;
+    height: 35rem;
+    margin-bottom: 2rem;
+  }
+  @include desktop {
+    width: 50rem;
+    height: 50rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.news-images {
+  width: 25rem;
+  height: 25rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  @include tablet {
+    width: 15rem;
+    height: 15rem;
+  }
+  @include laptop {
+    width: 35rem;
+    height: 35rem;
+  }
+  @include desktop {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+@keyframes hvr-push {
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.news-images:hover,
+.news-images:focus,
+.news-images:active {
+  animation-name: hvr-push;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.news-box {
+  clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0% 100%);
+  background-color: #FFEF97;
+  position: relative;
+  top: -50%;
+  width: 25rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  height: 6rem;
+  @include tablet {
+    width: 15rem;
+    top: -70%;
+  }
+  @include laptop {
+    top: -50%;
+    width: 35rem;
+    font-size: 2.9rem;
+    height: 9rem;
+  }
+  @include desktop {
+    top: -35%;
+    width: 50rem;
+    font-size: 3.5rem;
+    height: 9rem;
+  }
+}
+
+.news-label {
+  top: 3rem;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  @include tablet {
+    top: 3.2rem;
+    font-size: 1.5rem;
+  }
+  @include laptop{
+    top: 4rem;
+    font-size: 3rem;
+  }
+  @include desktop {
+    top: 4rem;
+    font-size: 3rem;
+  }
+}

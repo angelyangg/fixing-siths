@@ -1,0 +1,141 @@
+@import "_variables.scss";
+
+.title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 7rem;
+  width: 70rem;
+  margin: auto;
+  position: relative;
+  top: -100rem;
+  color: white;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+  @include phone {
+    font-size: 2.8rem;
+    top: -15rem;
+    width: 30rem;
+  }
+  @include tablet {
+    font-size: 6rem;
+    width: 70rem;
+    top: -35rem
+  }
+  @include laptop {
+    top: -50rem;
+  }
+  @include desktop {
+    font-size: 8rem;
+    width: 87rem;
+    top: -63rem;
+  }
+}
+.intro {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  @include desktop {
+    height: 105vh;
+  }
+}
+.school-img {
+  z-index: -1;
+  height: 100vh;
+  @include phone {
+    height: auto;
+    width: 100%;
+  }
+}
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -8rem;
+  }
+  @include laptop {
+    margin-top: -16rem;
+  }
+  @include phone {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -7rem;
+  }
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  @include phone {
+    margin: auto;
+    width: 30rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+  }
+}
+
+.message-title {
+  margin: 1rem;
+  @include tablet {
+    font-size: 4rem;
+  }
+  @include laptop {
+    margin-top: 6rem;
+    font-size: 5rem;
+  }
+  @include desktop {
+    margin-top: 6rem;
+    font-size: 5rem;
+  }
+}
+.welcome {
+  width: 50rem;
+  font-size: 1.5rem;
+  @include phone {
+    margin: auto;
+    width: 30rem;
+  }
+  @include tablet {
+    width: 50rem;
+    font-size: 2rem;
+  }
+  @include laptop {
+    font-size: 2.4rem;
+    padding-left: 3rem;
+  }
+  @include desktop {
+    font-size: 2.7rem;
+    padding-left: 3rem;
+  }
+}
+.pimage {
+  border: medium;
+  margin: 2rem;
+  @include phone {
+    width: 30rem;
+    margin: auto;
+  }
+  @include tablet{
+    width: 30rem;
+  }
+  @include laptop {
+    height: 65vh;
+  }
+  @include desktop {
+    height: 65vh;
+  }
+}
