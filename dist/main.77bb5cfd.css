@@ -729,7 +729,7 @@ ul {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .shadow-content {
     font-size: 2.8rem;
-    top: 25vh;
+    top: 23vh;
   }
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
@@ -752,7 +752,7 @@ ul {
 @media (min-width: 813px) and (max-width: 1024px) {
   .click-here {
     font-size: 2rem;
-    top: 70vh;
+    top: 73vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
