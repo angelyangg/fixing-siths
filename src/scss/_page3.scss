@@ -65,57 +65,67 @@
 }
 
 .shadow-title {
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
   color: white;
-  margin-top: 6rem;
+  margin-top: 7rem;
+  text-align: center;
   @include tablet {
     width: 50vh;
+    margin-top: 7rem;
+    font-size: 5rem;
   }
   @include laptop {
-    font-size: 7rem;
+    margin-top: 9rem;
+    font-size: 6rem;
     width: 50vh;
   }
   @include desktop {
-    margin-top: 5rem;
+    margin-top: 11rem;
+    margin-left: 7rem;
     font-size: 6rem;
   }
 }
 
 .shadow-content {
   position: absolute;
-  font-size: 2rem;
-  top: 22vh;
+  font-size: 1.7rem;
+  top: 18vh;
   color: white;
   padding: 3rem;
   @include tablet {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    top: 22vh;
   }
   @include laptop {
-    font-size: 3.5rem;
-    top: 28vh;
+    font-size: 2.8rem;
+    top: 25vh;
   }
   @include desktop {
+    top: 19vh;
     font-size: 3rem;
     padding: 8rem;
   }
 }
 
-.read-story  {
+.click-here  {
   position: relative;
   font-size: 2rem;
   color: white;
   text-transform: uppercase;
   border: 1px solid white;
   padding: 1rem;
-  top: 62vh;
+  top: 61vh;
   @include tablet {
+    font-size: 2rem;
     top: 70vh;
   }
   @include laptop {
-    top: 81vh;
+    font-size: 3rem;
+    top: 76vh;
   }
   @include desktop {
-    top: 78vh;
+    top: 72vh;
+    font-size: 3rem;
   }
 }

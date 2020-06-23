@@ -44,7 +44,7 @@
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-    height: 45vh;
+    height: 35vh;
     justify-content: space-evenly;
   }
   @include laptop {
