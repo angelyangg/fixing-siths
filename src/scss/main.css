@@ -236,6 +236,7 @@ ul {
   position: relative;
   top: -100rem;
   color: white;
+  text-align: center;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
@@ -265,7 +266,7 @@ ul {
   .title {
     font-size: 8rem;
     width: 87rem;
-    top: -63rem;
+    top: -56rem;
   }
 }
 
@@ -381,6 +382,7 @@ ul {
 
 .message-title {
   margin: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -406,6 +408,7 @@ ul {
 .welcome {
   width: 50rem;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 375px) and (max-width: 812px) {
@@ -431,7 +434,7 @@ ul {
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .welcome {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     padding-left: 3rem;
   }
 }
@@ -578,7 +581,7 @@ ul {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     margin: 0 auto;
-    padding-top: 10rem;
+    padding-top: 4rem;
     width: 168rem;
   }
 }
@@ -750,6 +753,7 @@ ul {
   height: 85vh;
   background-color: #FFEF97;
   font-family: 'Raleway', sans-serif;
+  text-align: center;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
@@ -766,7 +770,7 @@ ul {
 
 @media (min-width: 1441px) and (max-width: 2560px) {
   .pageThree {
-    margin-top: 50rem;
+    margin-top: 60rem;
     height: 100vh;
   }
 }
@@ -977,6 +981,8 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 0rem;
   }
 }
@@ -1041,6 +1047,7 @@ ul {
   margin-top: auto;
   margin-left: 1.5rem;
   padding: 1.75rem 0.5rem 1.75rem 0.5rem;
+  text-align: center;
 }
 
 @media (min-width: 813px) and (max-width: 1024px) {
